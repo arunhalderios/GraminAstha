@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MembersListView: View {
+struct LoanForm: View {
     var body: some View {
         Text("Members List")
             .font(.largeTitle)
@@ -15,7 +15,7 @@ struct MembersListView: View {
     }
 }
 
-struct NewMemberView: View {
+struct Group: View {
     var body: some View {
         Text("New Member")
             .font(.largeTitle)

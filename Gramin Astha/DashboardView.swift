@@ -88,27 +88,53 @@ struct DashboardView: View {
                                 
                                 // MARK: Members List
                                 NavigationLink {
-                                    MembersListView()
+                                    LoanForm()
                                 } label: {
                                     DashboardCard(
-                                        title: "Members List",
+                                        title: "LoanForm",
                                         subtitle: "View members",
-                                        icon: "person.3.fill",
+                                        icon: "person.badge.plus",
                                         color: .blue
                                     )
                                 }
                                 
                                 // MARK: New Member
                                 NavigationLink {
-                                    NewMemberView()
+                                    Group()
                                 } label: {
                                     DashboardCard(
-                                        title: "New Member",
+                                        title: "Group",
                                         subtitle: "Add a member",
-                                        icon: "person.badge.plus",
+                                        icon: "person.3.fill",
                                         color: .green
                                     )
                                 }
+                                
+                                // MARK: Master Roll
+                                NavigationLink {
+                                    MasterRollView()
+                                } label: {
+                                    DashboardCard(
+                                        title: "Master Roll",
+                                        subtitle: "Manage master roll",
+                                        icon: "list.clipboard.fill",
+                                        color: .cyan
+                                    )
+                                }
+                                
+                                // MARK: Collection Sheet
+                                NavigationLink {
+                                    CollectionSheetView()
+                                } label: {
+                                    DashboardCard(
+                                        title: "Collection Sheet",
+                                        subtitle: "View collections",
+                                        icon: "doc.plaintext.fill",
+                                        color: .orange
+                                    )
+                                }
+                                
+
                                 
                                 // MARK: Cash Book
                                 NavigationLink {
@@ -159,29 +185,7 @@ struct DashboardView: View {
                                     )
                                 }
                                 
-                                // MARK: Master Roll
-                                NavigationLink {
-                                    MasterRollView()
-                                } label: {
-                                    DashboardCard(
-                                        title: "Master Roll",
-                                        subtitle: "Manage master roll",
-                                        icon: "list.clipboard.fill",
-                                        color: .cyan
-                                    )
-                                }
-                                
-                                // MARK: Collection Sheet
-                                NavigationLink {
-                                    CollectionSheetView()
-                                } label: {
-                                    DashboardCard(
-                                        title: "Collection Sheet",
-                                        subtitle: "View collections",
-                                        icon: "doc.plaintext.fill",
-                                        color: .orange
-                                    )
-                                }
+
                             }
                             
                             // MARK: - Logout Button
