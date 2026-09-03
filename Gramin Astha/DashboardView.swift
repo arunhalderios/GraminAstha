@@ -100,7 +100,7 @@ struct DashboardView: View {
                                 
                                 // MARK: New Member
                                 NavigationLink {
-                                    Group()
+                                    GroupList()
                                 } label: {
                                     DashboardCard(
                                         title: "Group",
