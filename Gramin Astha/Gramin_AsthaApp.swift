@@ -17,6 +17,7 @@ struct Gramin_AsthaApp: App {
     var body: some Scene {
         WindowGroup {
             SplashView()
+                .environment( \.managedObjectContext, persistenceController.container.viewContext )
         }
     }
 }
