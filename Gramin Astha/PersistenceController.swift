@@ -21,7 +21,7 @@ struct PersistenceController {
             
             if let error = error {
                 fatalError(
-                    "Core Data error: \(error.localizedDescription)"
+                    "Core Data error: \(error.localizedDescription)"  
                 )
             }
         }

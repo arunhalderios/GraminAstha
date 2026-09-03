@@ -86,14 +86,13 @@ struct DashboardView: View {
                                 spacing: 16
                             ) {
                                 
-                                // MARK: Members List
-                                NavigationLink {
-                                    LoanForm()
-                                } label: {
+                                // MARK: New Member
+                                // MARK: Loan Form
+                                Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLScRueTwWwNjEbB9pqhmI4cuOqasewCc89UaTzWY4_y3KgYG1A/viewform?usp=publish-editor4")!) {
                                     DashboardCard(
-                                        title: "LoanForm",
-                                        subtitle: "View members",
-                                        icon: "person.badge.plus",
+                                        title: "Loan Form",
+                                        subtitle: "Apply for a loan",
+                                        icon: "doc.text.fill",
                                         color: .blue
                                     )
                                 }
@@ -161,13 +160,12 @@ struct DashboardView: View {
                                 }
                                 
                                   
-                                // MARK: Settings
                                 NavigationLink {
-                                    SettingsView()
+                                    LoanForm()
                                 } label: {
                                     DashboardCard(
-                                        title: "Settings",
-                                        subtitle: "App settings",
+                                        title: "Offline Data Save",
+                                        subtitle: "Data save in coredata",
                                         icon: "gearshape.fill",
                                         color: .indigo
                                     )

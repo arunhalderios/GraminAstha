@@ -7,13 +7,6 @@
 
 import SwiftUI
 
-struct LoanForm: View {
-    var body: some View {
-        Text("Members List")
-            .font(.largeTitle)
-            .navigationTitle("Members")
-    }
-}
 
 struct Group: View {
     var body: some View {
